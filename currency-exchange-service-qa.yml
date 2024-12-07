@@ -1,0 +1,13 @@
+spring:
+  jpa:
+    show-sql: false
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:qaDB
+    username: qauser
+    password: qapass
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8762/eureka
+
