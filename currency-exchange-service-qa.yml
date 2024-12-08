@@ -3,11 +3,10 @@ spring:
     show-sql: false
   datasource:
     driver-class-name: org.h2.Driver
-    url: jdbc:h2:mem:qaDB
-    username: qauser
-    password: qapass
+    url: 8fc5c58ecb9e68db89bf3ac59e3273defd2dd47b7fdab656d5e30c2064575018f21d038f337addb2dc4b9ae021163687
+    username: d2558f25eae364a2496075a51c2c3a88aedd0dcf3157d308d069d666ebbc1955
+    password: f16f614ba044c9bf7ab94ed161373c36ae5f29fb4607d294d4fa5a06f77e5176
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8762/eureka
-
