@@ -1,11 +1,16 @@
 spring:
-  jpa:
-    show-sql: false
   datasource:
-    driver-class-name: org.h2.Driver
-    url: 8fc5c58ecb9e68db89bf3ac59e3273defd2dd47b7fdab656d5e30c2064575018f21d038f337addb2dc4b9ae021163687
-    username: d2558f25eae364a2496075a51c2c3a88aedd0dcf3157d308d069d666ebbc1955
-    password: f16f614ba044c9bf7ab94ed161373c36ae5f29fb4607d294d4fa5a06f77e5176
+    url: {cipher}dbc40ebe8554a80f701da21a2d21b70858a23ca84a5eb9f230a4d77244183263efacd44aa1d779e8ec43840a5fd72f5b14a46041b9a8ac4406d3151faf850e26d68c05a6dd5c10337c53cde86b10acba
+    username: {cipher}fe1c5d971af12197dceecfe34516f2ee57405be68fc355cf62737a020a2b9af3
+    password: {cipher}f986c561b1f48ff5ec3aa4874d71515e700d54b7672154d37da6a26d66effffb
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+        show_sql: true
 eureka:
   client:
     service-url:
