@@ -1,3 +1,6 @@
+build:
+  version: "{cipher}97d4fcbf86daee3cd50bfb0d9065ea1a11530f2a2604c17e7354b8a419816cd0cbb73f5bf51e7a4c648db2072a3552f9"
+
 eureka:
   client:
     service-url:
